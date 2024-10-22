@@ -1,0 +1,557 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme Header */
+header {
+    background-color: black;
+    padding: 20px 0;
+    color: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Menu */
+nav {
+    flex-grow: 1;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6f3c;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #ff6f3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65c28;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('bg-img.avif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Hero CTA Button */
+.hero-button {
+    background-color: #ff6f3c;
+    color: #ffffff;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #e65c28;
+}
+
+/* Featured Burger Section */
+.featured-burgers {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.featured-burgers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff6f3c;
+}
+
+/* Burger Grid */
+.burger-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.burger-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.burger-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.burger-card h3 {
+    font-size: 1.5rem;
+    color: #ff6f3c;
+    margin-bottom: 10px;
+}
+
+.burger-card p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+}
+
+/* Hover effect */
+.burger-card:hover {
+    transform: scale(1.05);
+}
+
+/* Specials and Promotions Section */
+.specials {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.specials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff6f3c;
+}
+
+/* Specials Grid */
+.specials-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.special-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 30%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.special-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.special-card h4 {
+    font-size: 1.5rem;
+    color: #ff6f3c;
+    margin-bottom: 10px;
+}
+
+.special-card p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+/* Specials Button */
+.special-button {
+    background-color: #ff6f3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.special-button:hover {
+    background-color: #e65c28;
+}
+
+/* Hover Effect */
+.special-card:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff6f3c;
+}
+
+/* Testimonials Grid */
+.testimonials-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.testimonial-card .quote {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    font-style: italic;
+}
+
+.testimonial-card .customer-name {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.testimonial-card .rating {
+    font-size: 1.3rem;
+    color: #ff6f3c;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+/* Location and Hours Section */
+.location-hours {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.location-hours h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff6f3c;
+}
+
+/* Location and Hours Grid */
+.location-hours-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.location,
+.hours {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.location h3,
+.hours h3 {
+    font-size: 1.8rem;
+    color: #ff6f3c;
+    margin-bottom: 15px;
+}
+
+.location p,
+.hours ul {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+}
+
+.hours ul {
+    list-style: none;
+}
+
+.hours ul li {
+    margin-bottom: 10px;
+}
+
+/* Hover Effect */
+.location:hover,
+.hours:hover {
+    transform: scale(1.05);
+}
+/* New Settlers and Social Media Section */
+.new-settlers-social {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.new-settlers-social h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff6f3c;
+}
+
+.new-settlers-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Newsletter Signup Section */
+.newsletter {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.newsletter h3 {
+    font-size: 1.8rem;
+    color: #ff6f3c;
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.newsletter button {
+    background-color: #ff6f3c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+    background-color: #e65c28;
+}
+
+/* Social Media Section */
+.social-media {
+    background-color: #2a2a2a;
+    padding: 20px;
+    width: 45%;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.social-media h3 {
+    font-size: 1.8rem;
+    color: #ff6f3c;
+    margin-bottom: 15px;
+}
+
+.social-media p {
+    font-size: 1.1rem;
+    color: #b3b3b3;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
+    /* White icons on dark background */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/* Hover Effect */
+.newsletter:hover,
+.social-media:hover {
+    transform: scale(1.05);
+}
+
+
+/* Footer Section */
+.footer {
+    background-color: #1b1b1b; /* Dark background */
+    color: #ffffff; /* White text for contrast */
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer h3 {
+    color: #ff8c00; /* Orange color for headings */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-about p,
+.footer-links ul,
+.footer-contact p,
+.footer-social p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ff8c00; /* Orange color on hover */
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social .social-icon img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); /* Makes icons white */
+    transition: filter 0.3s ease;
+}
+
+.footer-social .social-icon:hover img {
+    filter: invert(50%) sepia(100%) hue-rotate(-25deg) saturate(200%);
+    /* Orange color effect on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333; /* Subtle top border */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #ff8c00; /* Orange color for copyright */
+}
